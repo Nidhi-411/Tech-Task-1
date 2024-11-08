@@ -32,6 +32,10 @@ function showNotification(message) {
 
 function generateMatrix(rows, columns) {
 
+  
+  matrix = [];
+ maxElement = { value: -Infinity, row: 0, col: 0 };
+  
   if (rows <= 0) {
     console.log("is it working");
     showNotification("Please enter a valid row value");
@@ -80,7 +84,7 @@ function generateMatrix(rows, columns) {
 window.submitMatrix = function () {
    
   if (matrix.length === 0) {
-    alert("Please generate the matrix first.");
+    showNotification("Please generate the matrix first.");
     return;
   }
 
