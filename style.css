@@ -15,15 +15,13 @@ body {
   
   .matrix-row {
     display: flex;
-
   }
   
   #notification {
     position: fixed;
     top: 20;
     left: 0;
-     
-    padding: 1em;
+   padding: 1em;
     background-color: #ffdddd;
     color: #d8000c;
     text-align: center;
@@ -54,6 +52,13 @@ body {
     margin-top: 15px;
     padding: 10px;
     font-size: 1em;
+    cursor: pointer;
+
+  }
+
+  button:hover{
+    color: #1a4a20;
+     
   }
   
   
@@ -71,10 +76,17 @@ body {
     flex-direction: column;
     gap: 15px;
   }
-
-  /* .submitRowcol{
-
-  } */
+ 
+  .submitRowcol:hover{
+    color: #1a4a20;
+  }
+   
+  .submitRowcol{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
   
   
   
