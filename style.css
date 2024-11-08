@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  #matrixContainer {
+    display: grid;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  
+  .matrix-row {
+    display: flex;
+
+  }
+  
+  #notification {
+    position: fixed;
+    top: 20;
+    left: 0;
+     
+    padding: 1em;
+    background-color: #ffdddd;
+    color: #d8000c;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    border:black solid 1px;
+  }
+  .hidden {
+    display: none !important; 
+  }
+  .visible {
+    display: block !important;
+  }
+  
+  
+  .matrix-input {
+    /* width: 40px; */
+    min-width: 20px;
+    width: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  
+  #resultContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* .submitRowcol{
+
+  } */
+  
+  
+  

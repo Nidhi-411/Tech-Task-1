@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nidhi-ASS-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="notification" class="hidden"></div>
+
+    <div>
+      <h1>Matrix , Task - 1 </h1>
+      <form class="form" id="matrixForm">
+        <div>
+        <label for="enterRow" id="row">Enter row here:</label>
+        <input type="number" id="enterRow" class="field" />
+    
+        <label for="enterCol" id="column">Enter column here:</label>
+        <input type="number" id="enterCol" class="field" />
+        </div>
+        <input
+          type="submit"
+          value="Generate Matrix"
+          class="submitRowcol"
+        />
+      </form>
+    </div>
+    <div id="matrixContainer"></div>
+    <button onclick="submitMatrix()">Find left and right of the Maximum</button>
+    <div id="resultContainer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
