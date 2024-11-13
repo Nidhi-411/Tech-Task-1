@@ -1,93 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
 
-  
-  #matrixContainer {
-    display: grid;
-    gap: 5px;
-    margin-top: 20px;
-      width:100%;
-  }
-  
-  
-  .matrix-row {
-    display: flex;
-  }
-  
-  #notification {
-    position: fixed;
-    top: 20;
-    left: 0;
-   padding: 1em;
-    background-color: #ffdddd;
-    color: #d8000c;
-    text-align: center;
-    font-weight: bold;
-    display: none;
-    border:black solid 1px;
-  }
-  .hidden {
-    display: none !important; 
-  }
-  .visible {
-    display: block !important;
-  }
-  
-  
-  .matrix-input {
-    /* width: 40px; */
-    min-width: 20px;
-    width: auto;
-    padding: 5px;
-    text-align: center;
-    font-size: 1em;
-    box-sizing: border-box;
-  }
-  
-  
-  button {
-    margin-top: 15px;
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
+.container {
+  text-align: center;
+  padding: 10px;
+}
 
-  }
+.matrix-box {
+  display: grid;
+  margin: 15px 15px;
+}
 
-  button:hover{
-    color: #1a4a20;
-     
-  }
-  
-  
-  #resultContainer {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #333;
-    width: 200px;
-    text-align: center;
-    font-weight: bold;
-  }
+.each-input-Box {
+  width: 100%;
+  padding: 10px;
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
- 
-  .submitRowcol:hover{
-    color: #1a4a20;
-  }
-   
-  .submitRowcol{
-    margin-top: 15px;
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  
-  
+#notification {
+  position: fixed;
+  top: 20;
+  left: 0;
+  padding: 1em;
+  background-color: #ffdddd;
+  color: #d8000c;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  border: black solid 2px;
+}
+.hidden {
+  display: none !important;
+}
+.visible {
+  display: block !important;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#back-button {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#generate-Button {
+  margin-top: 25px;
+  cursor: pointer;
+}
